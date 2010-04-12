@@ -141,7 +141,8 @@ class OutlookWebScraper(CookieScraper):
         #m = re.search(r'(?i)<BASE href="([^"]*)">', html)
         self.is_logged_in = True
         # take a look to your html source..it depends on owa implementation (language,etc.)
-        m = re.search("Non letto", html)           
+        #m = re.search("Non letto", html)   
+        m = re.search("fld sl bld",html) or re.search("Non letto",html)     
         if not m:
              print 'No new message'
              self.base_href = 'NO'

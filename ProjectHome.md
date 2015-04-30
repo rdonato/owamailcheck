@@ -1,0 +1,1 @@
+THis python application was created from http://code.google.com/p/weboutlook/ to just check Microsoft Outlook webmail for new mails. This version is useful when owa webpage is generated dynamically using javascripts. In this case weboutlook fails (it does not find base href tag).
